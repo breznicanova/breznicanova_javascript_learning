@@ -1,38 +1,21 @@
 export class Calculator {
-  constructor(number1, number2) {
-    this.number1 = number1;
-    this.number2 = number2;
-    console.log(`Zadal si čísla ${this.number1} a ${this.number2}.`);
+  addition(number1, number2) {
+    let sum = number1 + number2;
+    return console.log(`${number1} + ${number2} = ${sum}`);
   }
 
-  addition() {
-    let sum = this.number1 + this.number2;
-    return sum;
-    // console.log(`Sum of given numbers is: ${sum}`);
+  substraction(number1, number2) {
+    let diff = number1 - number2;
+    return console.log(`${number1} - ${number2} = ${diff}`);
   }
 
-  substraction() {
-    let diff = this.number1 - this.number2;
-    return diff;
-    // console.log(`Substraction of given numbers is: ${diff}`);
+  multiplication(number1, number2) {
+    let mul = number1 * number2;
+    return console.log(`${number1} . ${number2} = ${mul}`);
   }
 
-  multiplication() {
-    let mul = this.number1 * this.number2;
-    return mul;
-    // console.log(`Multilication of given numbers is: ${mul}`);
-  }
-
-  division() {
-    let result = this.number1 / this.number2;
-    return result;
-    /*
-    console.log(
-      `Division of given numbers is: ${result} (rounded ${
-        Math.round(result * 10) / 10
-      })`
-      
-    );
-    */
+  division(number1, number2) {
+    let result = number1 / number2;
+    return console.log(`${number1} / ${number2} = ${result}`);
   }
 }
